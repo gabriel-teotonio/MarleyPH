@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav{
+        .menu-list{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+}
+
+@media (max-width:770px) {
+    .header{
+        justify-content: center;
+        nav{
+            display: none;
+        }
+    }
+}

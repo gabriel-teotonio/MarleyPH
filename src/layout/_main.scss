@@ -1,0 +1,32 @@
+
+.main{
+    background-image: url("../images/bg-marley.png");
+    background-position: right top;
+    min-height: 100vh;
+    @include paddingGlobalPage();
+
+    .contentMain{
+         width: 45%;
+         margin-top: 4rem;
+         @include flexColumn();
+        .contentMain-title{
+            font-size: 64px;
+            line-height: 1;
+        }
+        .contentMain-description{
+            color: var(--color-gray);
+            margin-top: .5rem;
+        }
+        .primary-button{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width:770px) {
+    .main{
+        .contentMain{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.photos{
+    @include paddingGlobalPage();
+    min-height: 100vh;
+    height: auto;
+    .img-list{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .img-item{
+            img{
+                width: 100%;
+                border-radius: var(--b-radius_4);
+            }
+        }
+    }
+}
+
+@media (max-width:770px) {
+    .photos{
+        .img-list{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }       
+}
