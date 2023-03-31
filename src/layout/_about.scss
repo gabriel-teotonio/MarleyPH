@@ -11,6 +11,19 @@
         justify-content:space-around;
         width: 100%;
 
+        .about-list{
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+            margin-top: 1rem;
+
+            .about-item{
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+            }
+        }
+
         .marley-photo_about{
             width: 400px;
             max-width: 100%;
