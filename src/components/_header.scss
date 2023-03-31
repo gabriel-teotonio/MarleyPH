@@ -3,10 +3,21 @@
     align-items: center;
     justify-content: space-between;
 
+    .logo-marley{
+        width: 10rem;
+    }
+
     nav{
         .menu-list{
             display: flex;
             gap: 1rem;
+
+            .menu-item{
+                font-size: 1.2rem;
+                &:hover{
+                    color: rgba(255, 255, 255, 0.76);
+                }
+            }
         }
     }
 

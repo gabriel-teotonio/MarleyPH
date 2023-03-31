@@ -16,6 +16,7 @@
         .contentMain-description{
             color: var(--color-gray);
             margin-top: .5rem;
+            width: 76%;
         }
         .primary-button{
             margin-top: 2rem;
@@ -25,8 +26,10 @@
 
 @media (max-width:770px) {
     .main{
+        min-height: 80vh;
         .contentMain{
             width: 100%;
+            margin-top: 2rem;
         }
     }
 }

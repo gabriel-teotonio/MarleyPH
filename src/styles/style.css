@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,20 +73,26 @@ li {
 .main .contentMain .contentMain-description {
   color: var(--color-gray);
   margin-top: 0.5rem;
+  width: 76%;
 }
 .main .contentMain .primary-button {
   margin-top: 2rem;
 }
 
 @media (max-width: 770px) {
+  .main {
+    min-height: 80vh;
+  }
   .main .contentMain {
     width: 100%;
+    margin-top: 2rem;
   }
 }
 .photos {
   padding: 1rem 4rem;
   min-height: 100vh;
   height: auto;
+  margin-top: 2rem;
 }
 @media (max-width: 430px) {
   .photos {
@@ -129,6 +136,7 @@ li {
 .about .about-container .marley-photo_about {
   width: 400px;
   max-width: 100%;
+  transform: scaleX(-1);
 }
 .about .about-container .box-icons {
   display: flex;
@@ -150,6 +158,9 @@ li {
   .about .about-container .marley-photo_about {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  .about .about-container .about-container_content {
+    padding-left: 1rem;
   }
 }
 .contact {
@@ -183,9 +194,18 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+.header .logo-marley {
+  width: 10rem;
+}
 .header nav .menu-list {
   display: flex;
   gap: 1rem;
+}
+.header nav .menu-list .menu-item {
+  font-size: 1.2rem;
+}
+.header nav .menu-list .menu-item:hover {
+  color: rgba(255, 255, 255, 0.76);
 }
 
 @media (max-width: 770px) {

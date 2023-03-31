@@ -14,6 +14,7 @@
         .marley-photo_about{
             width: 400px;
             max-width: 100%;
+            transform: scaleX(-1);
         }
 
         .box-icons{
@@ -41,6 +42,9 @@
             .marley-photo_about{
                 width: 100%;
                 margin-bottom: 1rem;
+            }
+            .about-container_content{
+                padding-left: 1rem;
             }
         }
     }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marley PH</title>
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" href="src/images/icon-site.svg">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,36 +14,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
     <!-- icons -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" defer></script>
+
+    <!-- js -->
+    <script src="src/js/app.js" defer></script>
 </head>
 <body>
     <main class="main">
         <header class="header">
             <a href="#">
-                <img src="src/images/logo-marley.svg" alt="Logo Marley">
+                <img src="src/images/logo-marley.svg" class="logo-marley" alt="Logo Marley">
             </a>
             <nav>
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#">Projetos</a>
+                        <a href="#photos" onclick="scrollToSection('#photos')">Projetos</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Contatos</a>
+                        <a href="#contact" onclick="scrollToSection('#contact')">Contatos</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Sobre mim</a>
+                        <a href="#about" onclick="scrollToSection('#about')">Sobre mim</a>
                     </li>
                 </ul>
             </nav>
         </header>
         
         <article class="contentMain">
-            <h1 class="contentMain-title">Barbeiro Marley PH</h1>
-            <p class="contentMain-description">Me chamo Marley e sou barbeiro com mais de 2 anos de experiência. Agende um corte comigo com atendimento à domicilio</p>
-            <a href="#" class="primary-button">Ver trampos</a>
+            <h1 class="contentMain-title">Marley dos cortes</h1>
+            <p class="contentMain-description">Me chamo Marley e sou barbeiro, nas horas vagas também faço uns sons.</p>
+            <a href="#photos" onclick="scrollToSection('#photos')" class="primary-button">Ver meus trampos</a>
         </article>
     </main>
 
-    <section class="photos">
+    <section class="photos" id="photos">
         <h2 class="title-section">Meus trampos <span class="iconify" data-icon="majesticons:suitcase"></span></h2>
         <ul class="img-list">
             <li class="img-item">
@@ -60,7 +64,7 @@
         </ul>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <article class="about-container">
             <img class="marley-photo_about" src="src/images/marley-photo-about.svg" alt="marley image about">
             <article class="about-container_content">
@@ -86,11 +90,11 @@
         </article>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact-box">
             <h2 class="title-section">Quer falar comigo?</h2>
             <p>Me chama no whatsapp que te respondo rapidinho.</p>
-            <a class="primary-button" href="#">Chamar no zap <span class="iconify" style="font-size: 1.5rem;" data-icon="mingcute:whatsapp-fill"></span></a>    
+            <a class="primary-button" href="https://wa.me/5591992148605?text=Fala mano,20%vamo20%marcar20%um20%corte20%?">Chamar no zap <span class="iconify" style="font-size: 1.5rem;" data-icon="mingcute:whatsapp-fill"></span></a>    
         </div>
     </section>
 

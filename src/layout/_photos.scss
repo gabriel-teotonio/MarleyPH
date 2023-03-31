@@ -2,6 +2,7 @@
     @include paddingGlobalPage();
     min-height: 100vh;
     height: auto;
+    margin-top: 2rem;
     .img-list{
         display: grid;
         grid-template-columns: repeat(2, 400px);
